@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [ -z $VERSION ]; then
+  VERSION=latest
+fi
+
 docker run \
        -it \
        --rm \
@@ -8,4 +12,4 @@ docker run \
        -v ~/.Xauthority:/home/firefox/.Xauthority \
        -v `pwd`/firefox-data:/home/firefox/.mozilla \
        --network=host \
-       bryanpedini/firefox "$@"
+       bryanpedini/firefox:$VERSION "$@"
