@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Firefox in Docker
+Comment=Firefox in Docker
+GenericName=Web Browser
+Keywords=Internet;WWW;Browser;Web;Explorer
+Exec=run.sh - EDIT THIS TO SUIT YOUR NEEDS
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=firefox
+StartupNotify=true
